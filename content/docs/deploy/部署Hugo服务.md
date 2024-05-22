@@ -2,7 +2,7 @@
 title: 部署Hugo服务
 description: 
 date: 2024-5-23
-weight: 4
+weight: 1
 ---
 
 
