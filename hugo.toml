@@ -1,6 +1,6 @@
 baseURL = 'http://lilinfang37.github.io'
 languageCode = 'zh-cn'
-title = "lilinfang's website"
+title = "lilinfang's Website"
 
 [module]
 
@@ -16,12 +16,11 @@ path = "github.com/google/docsy"
     weight = 50
     url = "https://github.com/lilinfang37/"
 
-
-[[cascade]]
-type = "docs"
-
-  [cascade._target]
-  path = "/**"
+#设置默认值
+#[[cascade]]
+#type = "docs"
+#  [cascade._target]
+#  path = "/**"
 
 
 [params]
