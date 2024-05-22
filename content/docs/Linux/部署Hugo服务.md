@@ -11,7 +11,7 @@ weight: 1
 检查系统架构：uname -i
 
 安装Dart Sass前置模块
-```
+```bash
 sudo snap install dart-sass
 ```
 
@@ -20,9 +20,9 @@ sudo snap install dart-sass
 https://github.com/gohugoio/hugo/releases/download/v0.125.4/hugo_extended_0.125.4_linux-amd64.tar.gz
 
 2. 解压缩之后，将 Hugo.exe 放置在系统环境变量中
-
+```bash
  export PATH=$PATH:/home/lilnfh/my-env
-
+```
 
 
 3. 检查版本：hugo version
@@ -31,7 +31,7 @@ https://github.com/gohugoio/hugo/releases/download/v0.125.4/hugo_extended_0.125.
 
 去到[官网](https://go.dev/dl/)下载安装包版本（go1.22.3.windows-amd64.msi），一键安装，省事
 
-```
+```bash
 $ rm -rf /usr/local/go && tar -C /usr/local -xzf go1.22.3.linux-amd64.tar.gz
 
 vim ~/.bashrc 
@@ -52,7 +52,7 @@ go version
 2. 解压之后，添加 node.exe 目录到环境变量
 
 逐步操作，并查看英文介绍
-```
+```bash
 # installs nvm (Node Version Manager)
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
@@ -81,12 +81,15 @@ https://registry.npm.taobao.org
 
 ### 生成秘钥(ssh key)
 
+```bash
 检查本地是否有SSH Key存在 
 ls -al ~/.ssh
 
 ssh-keygen -t rsa -C "your_email@example.com"
 
-/home/user/.ssh/id_rsa.pub
+cat /home/user/.ssh/id_rsa.pub
+
+```
 
 https://stackoverflow.com/questions/68775869/message-support-for-password-authentication-was-removed
 
@@ -94,21 +97,21 @@ https://stackoverflow.com/questions/68775869/message-support-for-password-authen
 ### 需要使用token登录
 
 设置用户名和邮件
-```
-$ git config --global user.name "your_github_username"
-$ git config --global user.email "your_github_email"
-$ git config -l
+```bash
+git config --global user.name "your_github_username"
+git config --global user.email "your_github_email"
+git config -l
 ```
 
 设置token缓存
-```
-$ git config --global credential.helper cache
+```bash
+git config --global credential.helper cache
 ```
 
 清除token缓存
-```
-$ git config --global --unset credential.helper
-$ git config --system --unset credential.helper
+```bash
+git config --global --unset credential.helper
+git config --system --unset credential.helper
 ```
 
 ## 安装 docsy
@@ -118,12 +121,20 @@ $ git config --system --unset credential.helper
 
 下载：https://github.com/cdr/code-server/releases
 
-解压：tar -zxvf [你的code-server压缩文件名] -C /opt/
+解压：
+```bash
+tar -zxvf [你的code-server压缩文件名] -C /opt/
+```
 
-链接：ln -s /opt/[你的code-server目录名]/code-server /usr/local/bin/code-server
+链接：
+```bash
+ln -s /opt/[你的code-server目录名]/code-server /usr/local/bin/code-server
+```
 
-
-运行：code-server --bind-addr 0.0.0.0:[你的端口号]
+运行：
+```bash
+code-server --bind-addr 0.0.0.0:[你的端口号]
+```
 
 参考：https://blog.csdn.net/day_to_die/article/details/105990565
 

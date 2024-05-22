@@ -1,6 +1,6 @@
 baseURL = 'http://lilinfang37.github.io'
 languageCode = 'zh-cn'
-title = "lilinfang's Blogs"
+title = "lilinfang's website"
 
 [module]
 
@@ -14,7 +14,7 @@ path = "github.com/google/docsy"
 [[menu.main]]
     name = "GitHub"
     weight = 50
-    url = "https://github.com/lilinfang37/blog/"
+    url = "https://github.com/lilinfang37/"
 
 
 [[cascade]]
@@ -34,4 +34,10 @@ gcs_engine_id = "a112ed1dff70a4869"
 
 
 [params.ui]
+#关闭侧边栏
 #sidebar_search_disable = true
+#开启白天黑夜模式
+showLightDarkModeMenu = true
+
+[markup]
+  [markup.highlight]
