@@ -88,9 +88,28 @@ ssh-keygen -t rsa -C "your_email@example.com"
 
 /home/user/.ssh/id_rsa.pub
 
-
 https://stackoverflow.com/questions/68775869/message-support-for-password-authentication-was-removed
 
+
+### 需要使用token登录
+
+设置用户名和邮件
+```
+$ git config --global user.name "your_github_username"
+$ git config --global user.email "your_github_email"
+$ git config -l
+```
+
+设置token缓存
+```
+$ git config --global credential.helper cache
+```
+
+清除token缓存
+```
+$ git config --global --unset credential.helper
+$ git config --system --unset credential.helper
+```
 
 ## 安装 docsy
 

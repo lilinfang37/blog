@@ -1,6 +1,6 @@
-baseURL = 'http://lilinfang37.github.io/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'http://lilinfang37.github.io'
+languageCode = 'zh-cn'
+title = "lilinfang's Blogs"
 
 [module]
 
@@ -9,3 +9,29 @@ proxy = "direct"
 [[module.imports]]
 
 path = "github.com/google/docsy"
+
+
+[[menu.main]]
+    name = "GitHub"
+    weight = 50
+    url = "https://github.com/lilinfang37/blog/"
+
+
+[[cascade]]
+type = "docs"
+
+  [cascade._target]
+  path = "/**"
+
+
+[params]
+#设置离线搜索
+#offlineSearch = true
+#offlineSearchSummaryLength = 200
+#offlineSearchMaxResults = 25
+# Google Custom Search Engine ID. Remove or comment out to disable search.
+gcs_engine_id = "a112ed1dff70a4869"
+
+
+[params.ui]
+#sidebar_search_disable = true
